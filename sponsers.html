@@ -917,11 +917,33 @@
             
             <style>
               .pastsponser{
-                scale: 70%;
+                scale: 80%;
               }
+              .ps{
+                  display: grid;
+                 grid-template-columns: auto auto auto auto;
+              }
+              @media only screen and (max-width: 1100px) {
+                .ps{
+                  display: grid;
+                  grid-template-columns: auto auto auto;
+                }
+              }
+            @media only screen and (max-width: 900px) {
+              .ps{
+                display: grid;
+                grid-template-columns: auto auto;
+              }
+            }
+            @media only screen and (max-width: 600px) {
+              .ps{
+                display: grid;
+               grid-template-columns: auto;
+            }
+          }
             </style>
 
-            <ol class="grid">
+            <ol class="grid ps ">
               <li class="grid__item showcase__card pastsponser">
 
                 <div class="showcase__card__picture__sponsors">

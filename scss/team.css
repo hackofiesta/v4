@@ -2556,8 +2556,9 @@ body {
       .homepage__buttons .button + .button {
         margin-left: 2rem; } }
   .homepage__buttons .button {
-    margin-top: 1rem;
-    border-radius: 10rem; }
+    height: 46px;
+    width: 250px;
+    border-radius: 1.2rem; }
 
 .page {
   width: 100%;

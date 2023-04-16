@@ -432,32 +432,54 @@
                 </div>
                 <script>
                   // Get current time and format
-                  function getTime() {
-                    let date = new Date(),
-                      min = date.getMinutes(),
-                      sec = date.getSeconds(),
-                      hour = date.getHours();
+                //  function getTime() {
+                //    let date = new Date(),
+                //      min = date.getMinutes(),
+                //      sec = date.getSeconds(),
+                //      hour = date.getHours();
+//
+                //    return (
+                //      "" +
+                //      (hour < 10 ? "0" + hour : hour) +
+                //      ":" +
+                //      (min < 10 ? "0" + min : min) +
+                //      ":" +
+                //      (sec < 10 ? "0" + sec : sec)
+                //    );
+                //  }
+//
+                //  // Set up the clock
+                //  document.getElementById("clock").innerHTML = getTime();
+                //  const clock = document.getElementById("clock");
+                //  if (navigator.userAgent.indexOf("Firefox") > 0) {
+                //    clock.style.marginTop = "3em";
+                //  }
+                //  // Set clock interval to tick clock
+                //  setInterval(() => {
+                //    document.getElementById("clock").innerHTML = getTime();
+                //  }, 100);
+                // Set the date we're counting down to
+                var countDownDate = new Date("Apr 22, 2023 10:00:00").getTime();
 
-                    return (
-                      "" +
-                      (hour < 10 ? "0" + hour : hour) +
-                      ":" +
-                      (min < 10 ? "0" + min : min) +
-                      ":" +
-                      (sec < 10 ? "0" + sec : sec)
-                    );
-                  }
+                // Update the count down every 1 second
+                var x = setInterval(function() {
 
-                  // Set up the clock
-                  document.getElementById("clock").innerHTML = getTime();
-                  const clock = document.getElementById("clock");
-                  if (navigator.userAgent.indexOf("Firefox") > 0) {
-                    clock.style.marginTop = "3em";
-                  }
-                  // Set clock interval to tick clock
-                  setInterval(() => {
-                    document.getElementById("clock").innerHTML = getTime();
-                  }, 100);
+                  // Get today's date and time
+                  var now = new Date().getTime();
+
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                  // Display the result in the element with id="demo"
+                  document.getElementById("clock").innerHTML = days + "D " + hours + "H "
+                  + minutes + "M " + seconds + "S ";
+                }, 1000);
                 </script>
               </h1>
 
@@ -472,7 +494,7 @@
                   class="apply-button" 
                   data-hackathon-slug="hof-v4" 
                   data-button-theme="light"
-                  style="height: 44px; width: 300px; border-radius: 0.4rem;margin-left: 20px;"
+                  style="height: 44px; width: 300px; border-radius: 0.4rem;margin-left: 20px;margin-top: 1rem;"
                   ></div>
               </div>
             </div>

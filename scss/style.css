@@ -1,11 +1,12 @@
-.kool1{
+.kool1 {
   width: 50px;
   height: 50px;
   display: inline-block;
   cursor: pointer;
   transition: all 0.5s;
 }
-.logoHovered{
+
+.logoHovered {
   opacity: 0;
   z-index: -1;
   position: absolute;
@@ -16,13 +17,13 @@
 
 
 .font-display {
-    font-family: Clash Display, sans-serif;
-  }
+  font-family: Clash Display, sans-serif;
+}
 
-  .text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 
 /* .kool2{
     color: black;
@@ -31,7 +32,7 @@
     transition: background-color 0.4s, color 0.4s, border-color 0.4s, transform 0.4s; 
    
 } */
-.logo{
+.logo {
   margin: auto;
   position: relative;
   bottom: 300px;
@@ -46,6 +47,7 @@ LANDING PAGE
   display: flex;
   /* background-color: #000; */
 }
+
 .character {
   height: 108px;
 }
@@ -87,24 +89,27 @@ SPONSORS PAGE
 /***************************************************************************************
 THEME PAGE 
 ***************************************************************************************/
-.t-circle{
+.t-circle {
   width: 50%;
   background-color: blue;
-  
+
 }
-.lottie{
+
+.lottie {
   margin: auto;
-  height: 10vh; 
+  height: 10vh;
   margin-top: 5vh;
 }
-.lottie-text{
+
+.lottie-text {
   margin: auto;
   margin-top: 3vh;
   margin-bottom: 3vh;
   text-align: center;
   font-size: 2rem;
-  
+
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -116,75 +121,90 @@ THEME PAGE
   transition: all 0.2s;
   backdrop-filter: blur(24px);
 }
+
 .card:hover {
   transform: translate(10px, 10px);
   box-shadow: none;
 }
+
 .card>img {
   height: 200px;
   object-fit: cover;
 }
+
 .cont {
   padding: 0 20px;
 }
 
-.prize{
+.prize {
   padding-left: 20px;
   padding-right: 20px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 1.4rem 3rem rgba(160, 160, 160, 0.3);
 }
-.prize-content{
+
+.prize-content {
   display: block;
- 
+
 }
-.blast{
+
+.blast {
   position: absolute;
   z-index: -100;
 }
-.blastright{
+
+.blastright {
   position: absolute;
   right: 300px;
   z-index: -100;
 }
-.blastleft{
+
+.blastleft {
   position: absolute;
   left: 80px;
   z-index: -100;
 }
+
 @media only screen and (max-width: 1076px) {
-  .pz3{
+  .pz3 {
     margin-top: 400px;
   }
 }
+
 @media only screen and (max-width: 767px) {
- .pz2{
-  margin-top: 400px;
- }
- .pz3{
-  margin-top: 800px;
- }
+  .pz2 {
+    margin-top: 400px;
+  }
+
+  .pz3 {
+    margin-top: 800px;
+  }
 }
-.speakers{
+
+.speakers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 2em 1em;
   text-align: center;
 }
+
 .column {
   width: 100%;
   padding: 0.5em 0;
 }
-.speaker img{
+
+.speaker img {
   width: 100%;
   border-radius: 50%;
 }
-.speaker{
+
+.speaker {
   box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
   padding: 3.5em 1em;
   border-radius: 0.6em;
@@ -194,7 +214,8 @@ THEME PAGE
   background-color: #ffffff;
   margin-top: 30px;
 }
-.speaker .img-container{
+
+.speaker .img-container {
   width: 8em;
   height: 8em;
   background-color: #a993ff;
@@ -202,15 +223,18 @@ THEME PAGE
   border-radius: 50%;
   margin: 0 auto 2em auto;
 }
+
 .speaker h3 {
   font-weight: 500;
 }
+
 .speaker p {
   font-weight: 300;
   text-transform: uppercase;
   margin: 0.5em 0 2em 0;
   letter-spacing: 2px;
 }
+
 .icons {
   width: 50%;
   min-width: 180px;
@@ -218,161 +242,195 @@ THEME PAGE
   display: flex;
   justify-content: space-between;
 }
-.speaker:hover{
+
+.speaker:hover {
   background: linear-gradient(#6045ea, #8567f7);
   color: #ffffff;
   transition: colors 0.3s;
 }
-.speaker:hover .img-container{
+
+.speaker:hover .img-container {
   transform: scale(1.15);
 }
+
 .speaker a {
   text-decoration: none;
   color: inherit;
   font-size: 1.4em;
 }
+
 @media screen and (min-width: 768px) {
   section {
     padding: 1em 7em;
   }
 }
+
 @media screen and (min-width: 992px) {
   section {
     padding: 1em;
   }
+
   .speaker {
     padding: 5em 1em;
   }
+
   .column {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding: 0 1em;
   }
 }
-.cssanimation, .cssanimation span {
+
+.cssanimation,
+.cssanimation span {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
-.cssanimation span { display: inline-block }
+.cssanimation span {
+  display: inline-block
+}
 
-.leFadeInLeft span { animation-name: leFadeInLeft }
+.leFadeInLeft span {
+  animation-name: leFadeInLeft
+}
+
 @keyframes leFadeInLeft {
   from {
-      opacity: 0;
-      transform: translateX(-60px);
+    opacity: 0;
+    transform: translateX(-60px);
   }
-  to { opacity: 1 }
+
+  to {
+    opacity: 1
+  }
 }
-.col{
+
+.col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
-.flex{
+
+.flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
-.pz1{
-  animation: lefttoright 2s forwards ;
+
+.pz1 {
+  animation: lefttoright 2s forwards;
   animation-delay: 0.5s;
 }
-.pz2{
-  animation: toptobottom 2s forwards ;
+
+.pz2 {
+  animation: toptobottom 2s forwards;
   animation-delay: 0.5s;
 }
-.pz3{
-  animation: righttoleft 2s forwards ;
+
+.pz3 {
+  animation: righttoleft 2s forwards;
   animation-delay: 0.5s;
 }
+
 @keyframes lefttoright {
-  0%{
-    transform: translate(-600px,-600px);
+  0% {
+    transform: translate(-600px, -600px);
   }
- 
-  100%{
+
+  100% {
     transform: translateX(0px);
   }
 }
+
 @keyframes toptobottom {
-  0%{
-    transform: translate(0px,-600px);
+  0% {
+    transform: translate(0px, -600px);
   }
- 
-  100%{
+
+  100% {
     transform: translateX(0px);
   }
 }
+
 @keyframes righttoleft {
-  0%{
-    transform: translate(600px,-600px);
+  0% {
+    transform: translate(600px, -600px);
   }
- 
-  100%{
+
+  100% {
     transform: translateX(0px);
   }
 }
-.firework{
+
+.firework {
   position: absolute;
-  transform: translate(-30px,-100px);
+  transform: translate(-30px, -100px);
   display: none;
   z-index: -1;
 }
-.prize{
-  
+
+.prize {
+
   padding: 30px;
   margin-bottom: 60px;
   transition: 0.8s;
 }
-.prize:hover{
- 
+
+.prize:hover {
+
   transform: scale(1.4);
   scale: 1.1;
 }
-.prize:hover .firework{
+
+.prize:hover .firework {
   display: block;
- 
+
 }
 
 
-.teamcard{
-  
+.teamcard {
+
   display: inline-block;
-  opacity: 0.9 ;
+  opacity: 0.9;
   border-radius: 20px;
   z-index: 99;
-  width: 320px; 
+  width: 320px;
   height: 320px;
-  
+
 }
-.teamcard .teamimage{
-   overflow: hidden;
-    width: inherit;
-    border-radius: 10px;
-   
+
+.teamcard .teamimage {
+  overflow: hidden;
+  width: inherit;
+  border-radius: 10px;
+
 }
-.teamimage img{
+
+.teamimage img {
   border-radius: 10px;
   width: inherit;
   overflow: hidden;
   transition: 1s;
+  object-fit: cover;
 }
-.teamcard:hover  .teamimage img{
+
+.teamcard:hover .teamimage img {
   border-radius: 10px;
   box-shadow: 0 1.4rem 3rem rgba(160, 160, 160, 0.3);
   width: inherit;
   overflow: hidden;
-     scale: 1.4;
-     filter: blur(50);
+  scale: 1.4;
+  filter: blur(50);
   -webkit-filter: blur(8px);
 
 }
-.team-content{
+
+.team-content {
   position: absolute;
   width: inherit;
   height: inherit;
@@ -382,46 +440,54 @@ THEME PAGE
   transform: translateY(-200px);
   display: none;
 }
-.team-content h3{
-  
+
+.team-content h3 {
+
   margin-top: -10px;
 }
-.teamcard:hover .team-content{
+
+.teamcard:hover .team-content {
   text-align: center;
   display: block;
 }
+
 .teamicons {
- 
+
   margin: auto;
   padding: 10px;
   width: 280px;
   display: flex;
   justify-content: space-between;
 }
-.teamicons li{
+
+.teamicons li {
   list-style: none;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 270px) {
-  .teamcard{
-    width: 200px; 
-    height: 200px; 
+  .teamcard {
+    width: 200px;
+    height: 200px;
   }
 }
+
 @media only screen and (max-width: 1076px) {
-  .team3{
+  .team3 {
     margin-top: 400px;
   }
 }
+
 @media only screen and (max-width: 700px) {
-  .team2{
+  .team2 {
     margin-top: 200px;
   }
 }
-.page ul{
+
+.page ul {
   width: 100%;
 }
+
 /* .team4{
   margin-top: 7rem;
 }
@@ -431,18 +497,21 @@ THEME PAGE
 .team6{
   margin-top: 21rem;
 } */
-.grid__item .example__card{
-   margin: auto;
+.grid__item .example__card {
+  margin: auto;
 }
+
 @media only screen and (max-width: 370px) {
-  .teamcard{
-    width: 240px; 
-    height: 240px; 
+  .teamcard {
+    width: 240px;
+    height: 240px;
   }
-  .team2{
+
+  .team2 {
     margin-top: 100px;
   }
-  .team3{
+
+  .team3 {
     margin-top: 200px;
   }
 }

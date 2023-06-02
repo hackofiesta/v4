@@ -37,6 +37,7 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136431166-1"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script>
     function handleReload() {
       location.reload();
@@ -450,69 +451,41 @@
     </div>
   </ul> -->
             <br />
-            <h1 class="ending">Ends In:</h1>
+            <style>
+              .ending{
+                display: flex;
+              }
+            </style>
+            <h1 class="ending">
+              <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_titk27w7.json"  background="transparent"  speed="1"  style="width: 80px; height: 70px;"  loop  autoplay></lottie-player>
+              Successfully Executed
+              <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_titk27w7.json"  background="transparent"  speed="1"  style="width: 80px; height: 70px;"  loop  autoplay></lottie-player>
+            </h1>
             <style>
               .ending{
                 font-weight: 500;
+              }
+              .seeresult{
+                text-decoration: none;
+                color: black;
+                display: flex;
               }
             </style>
             <h1 class="homepage__title">
               <div class="line">
                 <span>
-                  <section id="clock" class="font-display text-6xl md:text-8xl xl:text-9xl mt-10 mb-10"></section>
+                  <section id="clock" class="font-display text-6xl md:text-8xl xl:text-9xl mt-10 mb-10">
+                     
+                    <a href="./result.html" class="seeresult " onclick="window.location.assign(this.href)">
+                      <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_i5wfnbcg.json"  background="transparent"  speed="1"  style="width: 80px; height: 70px;"  loop  autoplay></lottie-player>
+                      See Results
+                      <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_i5wfnbcg.json"  background="transparent"  speed="1"  style="width: 80px; height: 70px;"  loop  autoplay></lottie-player>
+                    </a>
+
+                  </section>
                 </span>
               </div>
-              <script>
-                // Get current time and format
-                //  function getTime() {
-                //    let date = new Date(),
-                //      min = date.getMinutes(),
-                //      sec = date.getSeconds(),
-                //      hour = date.getHours();
-                //
-                //    return (
-                //      "" +
-                //      (hour < 10 ? "0" + hour : hour) +
-                //      ":" +
-                //      (min < 10 ? "0" + min : min) +
-                //      ":" +
-                //      (sec < 10 ? "0" + sec : sec)
-                //    );
-                //  }
-                //
-                //  // Set up the clock
-                //  document.getElementById("clock").innerHTML = getTime();
-                //  const clock = document.getElementById("clock");
-                //  if (navigator.userAgent.indexOf("Firefox") > 0) {
-                //    clock.style.marginTop = "3em";
-                //  }
-                //  // Set clock interval to tick clock
-                //  setInterval(() => {
-                //    document.getElementById("clock").innerHTML = getTime();
-                //  }, 100);
-                // Set the date we're counting down to
-                var countDownDate = new Date("Apr 23, 2023 23:59:59").getTime();
-
-                // Update the count down every 1 second
-                var x = setInterval(function () {
-
-                  // Get today's date and time
-                  var now = new Date().getTime();
-
-                  // Find the distance between now and the count down date
-                  var distance = countDownDate - now;
-
-                  // Time calculations for days, hours, minutes and seconds
-                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                  // Display the result in the element with id="demo"
-                  document.getElementById("clock").innerHTML = days + " : " + hours + " : "
-                    + minutes + " : " + seconds + "  ";
-                }, 1000);
-              </script>
+              
             </h1>
 
             <div class="homepage__buttons" style="display: flex; align-items: center;">
@@ -529,13 +502,8 @@
                   border-color: blue;
                 }
               </style>
-              <div class="discord-btn-div">
-                <a href="https://discord.gg/8VK8jMt63j" class="button" onclick="window.location.assign(this.href)"
-                  style="border-radius: 4px; margin: 8px 8px; padding-top: 8px; padding-bottom: 8px">DISCORD</a>
-              </div>
-              <div class="apply-button" id="applydev" data-hackathon-slug="hof-v4" data-button-theme="light"
-                style="height: 44px; width: 300px; border-radius: 0.4rem;margin-left: 20px;margin-top: 1rem;"></div>
-            </div>
+              
+              
             <div class="discord-btn-div" data-hackathon-slug="hof-v4" data-button-theme="light"
               style="height: 44px; width: 300px; border-radius: 0.4rem; margin-left: 20px; margin-top: 1rem;"></div>
           </div>
